@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<spells>
+    <fireBase>
+        <spell>
+            <name>Fireball</name>
+            <elements>fire</elements>
+            <damage>15</damage>
+        </spell>
+        <spell>
+            <name>Greater Fireball</name>
+            <elements>fire</elements>
+            <damage>25</damage>
+        </spell>
+    </fireBase>
+    <earthBase>
+        <spell>
+            <name>Rock Throw</name>
+            <elements>earth</elements>
+            <damage>13</damage>
+        </spell>
+    </earthBase>
+    <windBase>
+        <spell>
+            <name>Wind Slash</name>
+            <elements>wind</elements>
+            <damage>14</damage>
+        </spell>
+    </windBase>
+    <waterBase>
+        <spell>
+            <name>Water Splash</name>
+            <elements>water</elements>
+            <damage>12</damage>
+        </spell>
+    </waterBase>
+</spells>

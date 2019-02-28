@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<items>
+    <weapons>
+        <index>0</index>
+        <index>1</index>
+        <index>2</index>
+    </weapons>
+    <armor>
+        <index>0</index>
+    </armor>
+</items>

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<items>
+  <!-- Zbraně -->
+  <weapons>
+    <!-- Straight swords -->
+    <weapon>
+        <name>Broadsword</name>
+        <description>Just a simple broad sword</description>
+        <class>Straight sword</class>
+        <properties>
+          <damage>18</damage>
+          <staminaDrain>10</staminaDrain>
+          <skill></skill>
+        </properties>
+    </weapon>
+    <!-- Mrtky co vymyslel Šír -->
+    <weapon>
+      <name>Iron shovel</name>
+      <description>I came to dig, dig, dig, dig</description>
+      <class>wtf</class>
+      <properties>
+        <damage>40</damage>
+        <staminaDrain>30</staminaDrain>
+        <skill></skill>
+      </properties>
+    </weapon>
+    <!-- GreatSwords -->
+    <weapon>
+      <name>Claymore</name>
+      <description>An unusually large and heavy greatsword normally wielded with two hands.</description>
+      <class>greatsword</class>
+      <properties>
+        <damage>30</damage>
+        <staminaDrain>17</staminaDrain>
+        <skill></skill>
+      </properties>
+    </weapon>
+  </weapons>
+  <!-- Brnění -->
+
+  <armor>
+    <chestplate>
+      <name>Fallen Knight Armor</name>
+      <description>Armor of an order of fallen knights who disbanded and fled but met untimely deaths.</description>
+      <properties>
+        <damagereduction>5</damagereduction>
+
+          <health>10</health>
+          <stamina>0</stamina>
+
+      </properties>
+    </chestplate>
+  </armor>
+  <!-- Helmy -->
+  <helmets>
+     <name>Fallen Knight Helmet</name>
+      <description>Armor of an order of fallen knights who disbanded and fled but met untimely deaths.</description>
+      <properties>
+        <damagereduction>3</damagereduction>
+
+          <health>5</health>
+          <stamina>0</stamina>
+
+      </properties>
+  </helmets>
+  <!-- Rukavice -->
+  <gauntlets>
+     <name>Fallen Knight Gauntlets</name>
+      <description>Armor of an order of fallen knights who disbanded and fled but met untimely deaths.</description>
+      <properties>
+        <damagereduction>2</damagereduction>
+
+          <health>0</health>
+          <stamina>9</stamina>
+
+      </properties>
+  </gauntlets>
+</items>
