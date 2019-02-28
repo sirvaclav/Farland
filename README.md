@@ -17,5 +17,7 @@ Ovládání UI - Myš
 "Easter eggy" lokace
 ------------------------------
 Jednorožec - v main menu(pravý horní roh, trochu dole)
+
 Pizza - leží na pařezu(na levo od začátku hry)
+
 Záchod - uprostřed zelené louky(levý roh mapy)
