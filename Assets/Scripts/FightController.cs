@@ -266,7 +266,7 @@ public class FightController : MonoBehaviour {
             {
                 Debug.Log(spell.Name);
 
-                enemyHealth -= spell.Damage;
+                enemyHealth -= spell.Damage + MainCharacter.IntelligenceStat / 100 * spell.Damage;
 
                 UpdateBars();
 

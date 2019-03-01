@@ -31,7 +31,7 @@ public class GameOverScript : MonoBehaviour {
         MainCharacter.Equipment = new Equipment
         {
             Helm = new Item(),
-            Greaves = new Item(),
+            Gauntlets = new Item(),
             Armour = new Item(),
             Weapon = new Item()
         };

@@ -27,7 +27,7 @@ public class XmlLoader{
 
             XmlNode node = doc.DocumentElement.SelectSingleNode("/items/" + type);
             node = node.ChildNodes[index];
-
+            
             string itemName = node.ChildNodes[0].InnerText;
             string itemDesc = node.ChildNodes[1].InnerText;
             int itemDefHeal = 0;

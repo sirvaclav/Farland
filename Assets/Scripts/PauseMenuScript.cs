@@ -168,7 +168,6 @@ public class PauseMenuScript : MonoBehaviour {
         {
             foreach(Item item in MainCharacter.Inventory)
             {
-                Debug.Log(item.Name);
                 Button newItem = Instantiate(ItemPrefab);
                 newItem.GetComponentInChildren<Text>().text = item.Name;
                 newItem.transform.SetParent(InventoryGrid.transform);
@@ -209,31 +208,19 @@ public class PauseMenuScript : MonoBehaviour {
             switch (clickedItem.Category)
             {
                 case "helmet":
-                    MainCharacter.PlayerHealth -= MainCharacter.Equipment.Helm.BonusHealth;
-                    MainCharacter.PlayerStamina -= MainCharacter.Equipment.Helm.BonusStamina;
-                    MainCharacter.PlayerDamage -= MainCharacter.Equipment.Helm.BonusDamage;
-                    MainCharacter.PlayerDefendHeal -= MainCharacter.Equipment.Helm.DefendHeal;
+                    RemoveEquipmentBonuses();
                     MainCharacter.Equipment.Helm = clickedItem;
                     break;
-                case "armour":
-                    MainCharacter.PlayerHealth -= MainCharacter.Equipment.Armour.BonusHealth;
-                    MainCharacter.PlayerStamina -= MainCharacter.Equipment.Armour.BonusStamina;
-                    MainCharacter.PlayerDamage -= MainCharacter.Equipment.Armour.BonusDamage;
-                    MainCharacter.PlayerDefendHeal -= MainCharacter.Equipment.Armour.DefendHeal;
+                case "chestplate":
+                    RemoveEquipmentBonuses();
                     MainCharacter.Equipment.Armour = clickedItem;
                     break;
-                case "greaves":
-                    MainCharacter.PlayerHealth -= MainCharacter.Equipment.Greaves.BonusHealth;
-                    MainCharacter.PlayerStamina -= MainCharacter.Equipment.Greaves.BonusStamina;
-                    MainCharacter.PlayerDamage -= MainCharacter.Equipment.Greaves.BonusDamage;
-                    MainCharacter.PlayerDefendHeal -= MainCharacter.Equipment.Greaves.DefendHeal;
-                    MainCharacter.Equipment.Greaves = clickedItem;
+                case "gauntlet":
+                    RemoveEquipmentBonuses();
+                    MainCharacter.Equipment.Gauntlets = clickedItem;
                     break;
                 case "weapon":
-                    MainCharacter.PlayerHealth -= MainCharacter.Equipment.Weapon.BonusHealth;
-                    MainCharacter.PlayerStamina -= MainCharacter.Equipment.Weapon.BonusStamina;
-                    MainCharacter.PlayerDamage -= MainCharacter.Equipment.Weapon.BonusDamage;
-                    MainCharacter.PlayerDefendHeal -= MainCharacter.Equipment.Weapon.DefendHeal;
+                    RemoveEquipmentBonuses();
                     MainCharacter.Equipment.Weapon = clickedItem;
                     break;
                 default: break;
@@ -244,18 +231,34 @@ public class PauseMenuScript : MonoBehaviour {
     }
 
     /// <summary>
-    /// Metoda pro vypočítávání bonusů ze zbroje
+    /// Metoda pro odstranění bonusů z vybavení
+    /// </summary>
+    private void RemoveEquipmentBonuses()
+    {
+        Item helmet = MainCharacter.Equipment.Helm;
+        Item armour = MainCharacter.Equipment.Armour;
+        Item greaves = MainCharacter.Equipment.Gauntlets;
+        Item weapon = MainCharacter.Equipment.Weapon;
+
+        MainCharacter.PlayerMaxHealth -= (helmet.BonusHealth + armour.BonusHealth + greaves.BonusHealth + weapon.BonusHealth);
+        MainCharacter.PlayerDefendHeal -= (helmet.DefendHeal + armour.DefendHeal + greaves.DefendHeal + weapon.DefendHeal);
+        MainCharacter.PlayerMaxStamina -= (helmet.BonusStamina + armour.BonusStamina + greaves.BonusStamina + weapon.BonusStamina);
+        MainCharacter.PlayerDamage -= (helmet.BonusDamage + armour.BonusDamage + greaves.BonusDamage + weapon.BonusDamage);
+    }
+
+    /// <summary>
+    /// Metoda pro vypočítávání bonusů z vybavení
     /// </summary>
     private void CalculateEquipmentBonuses()
     {
         Item helmet = MainCharacter.Equipment.Helm;
         Item armour = MainCharacter.Equipment.Armour;
-        Item greaves = MainCharacter.Equipment.Greaves;
+        Item greaves = MainCharacter.Equipment.Gauntlets;
         Item weapon = MainCharacter.Equipment.Weapon;
 
-        MainCharacter.PlayerHealth += helmet.BonusHealth + armour.BonusHealth + greaves.BonusHealth + weapon.BonusHealth;
+        MainCharacter.PlayerMaxHealth += helmet.BonusHealth + armour.BonusHealth + greaves.BonusHealth + weapon.BonusHealth;
         MainCharacter.PlayerDefendHeal += helmet.DefendHeal + armour.DefendHeal + greaves.DefendHeal + weapon.DefendHeal;
-        MainCharacter.PlayerStamina += helmet.BonusStamina + armour.BonusStamina + greaves.BonusStamina + weapon.BonusStamina;
+        MainCharacter.PlayerMaxStamina += helmet.BonusStamina + armour.BonusStamina + greaves.BonusStamina + weapon.BonusStamina;
         MainCharacter.PlayerDamage += helmet.BonusDamage + armour.BonusDamage + greaves.BonusDamage + weapon.BonusDamage;
     }
 
@@ -327,5 +330,10 @@ public class PauseMenuScript : MonoBehaviour {
         }
 
         return enemyName;
+    }
+
+    public void ExitGameButton()
+    {
+        Application.Quit();
     }
 }

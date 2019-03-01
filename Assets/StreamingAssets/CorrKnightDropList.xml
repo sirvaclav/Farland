@@ -5,7 +5,13 @@
         <index>1</index>
         <index>2</index>
     </weapons>
-    <armor>
+    <armour>
         <index>0</index>
-    </armor>
+    </armour>
+    <helmets>
+        <index>0</index>
+    </helmets>
+    <gauntlets>
+        <index>0</index>
+    </gauntlets>
 </items>
