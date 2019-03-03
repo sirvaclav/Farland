@@ -24,7 +24,7 @@ MonoBehaviour:
   m_MinSize: {x: 713, y: 492}
   m_MaxSize: {x: 18008, y: 14042}
   vertical: 0
-  controlID: 2941
+  controlID: 108
 --- !u!114 &2
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -127,7 +127,7 @@ MonoBehaviour:
   m_MinSize: {x: 232, y: 492}
   m_MaxSize: {x: 10002, y: 14042}
   vertical: 1
-  controlID: 2942
+  controlID: 87
 --- !u!114 &4
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -146,8 +146,8 @@ MonoBehaviour:
     y: 0
     width: 410
     height: 470
-  m_MinSize: {x: 202, y: 221}
-  m_MaxSize: {x: 4002, y: 4021}
+  m_MinSize: {x: 200, y: 200}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 5}
   m_Panes:
   - {fileID: 5}
@@ -180,9 +180,9 @@ MonoBehaviour:
   m_PersistentViewDataDictionary: {fileID: 0}
   m_TreeViewState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: a8340100
-    m_LastClickedID: 79016
-    m_ExpandedIDs: 901afaff4821fafffab6fbffa25efcff945ffcff8860fcffb261fcfffe8ffeffb090feffde91feffe491feff7a96feff7e96feff64a0feff18abfeffd4abfeffb4acfeffb6adfeffceb5feff66bdfeffd6bffeffb0c0feffe4fbffff00000000f80e0000c4110000c81200009e5e000098a3000098a5000068a70000
+    m_SelectedIDs: ec0a0000
+    m_LastClickedID: 0
+    m_ExpandedIDs: e6c8ffff00d6ffff000000005a0e000018330000e4350000e8360000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -224,8 +224,8 @@ MonoBehaviour:
     y: 470
     width: 410
     height: 447
-  m_MinSize: {x: 230, y: 250}
-  m_MaxSize: {x: 10000, y: 10000}
+  m_MinSize: {x: 232, y: 271}
+  m_MaxSize: {x: 10002, y: 10021}
   m_ActualView: {fileID: 7}
   m_Panes:
   - {fileID: 7}
@@ -282,7 +282,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 8a2e0000
     m_LastClickedID: 11914
-    m_ExpandedIDs: ffffffff0000000066090000a8090000620a000010350000
+    m_ExpandedIDs: 00000000660900006a300000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -308,23 +308,23 @@ MonoBehaviour:
       m_ResourceFile: 
   m_AssetTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: a8340100
-    m_LastClickedID: 0
-    m_ExpandedIDs: ffffffff0000000066090000a8090000620a000010350000
+    m_SelectedIDs: ec0a0000
+    m_LastClickedID: 2796
+    m_ExpandedIDs: ffffffff0000000066090000a80900006a300000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
-      m_Name: 
-      m_OriginalName: 
+      m_Name: World
+      m_OriginalName: World
       m_EditFieldRect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 0
         height: 0
-      m_UserData: 0
+      m_UserData: 3388
       m_IsWaitingForDelay: 0
       m_IsRenaming: 0
-      m_OriginalEventType: 11
+      m_OriginalEventType: 0
       m_IsRenamingFilename: 1
       m_ClientGUIView: {fileID: 6}
     m_SearchString: 
@@ -335,8 +335,8 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
   m_ListAreaState:
-    m_SelectedInstanceIDs: a8340100
-    m_LastClickedInstanceID: 79016
+    m_SelectedInstanceIDs: ec0a0000
+    m_LastClickedInstanceID: 2796
     m_HadKeyboardFocusLastEvent: 0
     m_ExpandedInstanceIDs: cc230000
     m_RenameOverlay:
@@ -413,7 +413,7 @@ MonoBehaviour:
   m_MinSize: {x: 204, y: 442}
   m_MaxSize: {x: 4004, y: 8042}
   vertical: 1
-  controlID: 2862
+  controlID: 68
 --- !u!114 &10
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -467,14 +467,14 @@ MonoBehaviour:
     height: 380
   m_PersistentViewDataDictionary: {fileID: 0}
   m_SceneLighting: 1
-  lastFramingTime: 2928.6482120238534
+  lastFramingTime: 5523.5751653740635
   m_2DMode: 1
   m_isRotationLocked: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 18.02474, y: 16.494755, z: 1}
+    m_Target: {x: -0.4497819, y: -0.6278477, z: 90}
     speed: 2
-    m_Value: {x: 18.02474, y: 16.494755, z: 1}
+    m_Value: {x: -0.4497819, y: -0.6278477, z: 90}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -506,9 +506,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
-    m_Target: 177.62956
+    m_Target: 18.709667
     speed: 2
-    m_Value: 177.62956
+    m_Value: 18.709667
   m_Ortho:
     m_Target: 1
     speed: 2
@@ -796,8 +796,8 @@ MonoBehaviour:
     y: 401
     width: 782
     height: 516
-  m_MinSize: {x: 204, y: 221}
-  m_MaxSize: {x: 4004, y: 4021}
+  m_MinSize: {x: 200, y: 200}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 2}
   m_Panes:
   - {fileID: 2}
