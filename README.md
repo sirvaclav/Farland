@@ -1,6 +1,7 @@
 Hra v Unity Farland Unity verze 2018.2.15f1
 ---------------------
-O hře
+O hře:
+
 Jedná se o 2D RPG s prvky rouge like, kde je vaším úkolem splnit úkol a porazit hlavního záporáka.
 Ocitáte se v roli hlavního hrdiny Johanuse a musíte se probojovat ke konci.
 
